@@ -1,0 +1,17 @@
+. Historias de usuario con criterios de aceptación.
+ 
+   Historia de Usuario 1: Control de Carga de Imágenes
+   Como usuario con un plan de datos limitado, quiero poder activar un modo de "Carga bajo demanda" para las imágenes del feed, para    evitar gastar datos en contenido que no me interesa ver en ese momento.
+   Criterios de Aceptación:
+        a. Debe existir un interruptor en la configuración de la cuenta llamado "Carga bajo demanda".
+        b. Al estar activo, las imágenes en el feed aparecerán con un efecto de desenfoque (blur) o un placeholder gris.
+        c. La imagen completa solo se descargará y mostrará cuando el usuario haga clic sobre ella.
+        d. El estado de la configuración debe persistir incluso si se cierra la aplicación.
+ 
+   Historia de Usuario 2: Limpieza de Caché Manual
+   Como usuario con poco espacio en mi teléfono, quiero tener un botón dentro de la app para borrar archivos temporales y caché, para liberar espacio sin tener que ir a los ajustes complejos del sistema Android.
+   Criterios de Aceptación:
+        a. Debe mostrarse el tamaño exacto (en MB) que ocupa la caché actual en la sección de "Configuración > Almacenamiento".
+        b. Debe haber un botón visible de "Limpiar Caché".
+        c. La acción de limpieza no debe cerrar la sesión del usuario ni borrar sus mensajes directos.
+        d. Tras la limpieza, el contador de espacio debe actualizarse a 0 MB o al mínimo técnico permitido.
